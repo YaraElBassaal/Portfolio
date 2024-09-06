@@ -1,0 +1,106 @@
+html, body{
+    width: 100vw;
+}
+header{
+    overflow-x: hidden;
+}
+.ring{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 25%; 
+    left: -120px;
+}
+.circle{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 48%;
+    left: 100%; 
+    right: 0;
+}
+.name{
+    border-bottom: 5px solid rgb(113, 189, 113);
+}
+.contact{
+    border-bottom: 2px solid rgb(113, 189, 113);
+    
+}
+header p{
+    color: rgb(158, 158, 158)
+}
+@media (min-width: 768px) {
+    .hero p{
+        max-width: 300px;
+    }
+    .hero h1{
+        font-size: 3rem;
+    }
+    .ring{
+        top: 17%;
+        left: 0;
+        transform: translateX(-50%);
+    }
+    .hero .img-container{
+        width: 50% !important;
+    }
+    .info{
+        width: 75%;
+    }
+    .hero picture img{
+        width: 100% !important;
+        height: 85%;
+        max-height: 600px;
+        object-fit: cover;
+        
+    }
+}
+@media (min-width: 992px) {
+    .circle{
+        top: 55%;
+        left: 58%;
+        transform: translateX(-50%);
+    }
+}
+
+.ring2{
+    position: absolute;
+    
+    right: 0;
+    transform: translate(70%,50%);
+    bottom: 0;
+}
+
+@media (min-width: 768px) {
+    main .container{
+        border-bottom: none !important;
+    }
+}
+.ring3{
+    position: absolute;
+    transform: translate(-70%, -50%);
+    top: 75%; 
+    left: 0;
+}
+.contact-section p{
+    max-width: 450px;
+}
+form{
+    max-width: 400px;
+}
+@media (min-width: 992px) {
+
+    .contact-section .container div{
+        width: 45%;
+    }
+    .contact-section .container form{
+        width: 45%;
+    }
+    .ring3{
+        transform: translate(-50%, -50%);
+    }
+}
+.contact-section,footer{
+    background-color:rgb(36, 36, 36) ;
+}
+footer .container{
+    border-top: 2px solid #fff;
+}
